@@ -1,0 +1,1242 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SingleValuePerNestSorting />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='publicationsraw+ (task-mcm)' inline='true' name='federated.1kxk1yn1g1tzbs1a8jail0cd2l9m' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='localhost' name='postgres.1j6f5zv08l6xrm1gwlawy02bpjtq'>
+            <connection authentication='username-password' class='postgres' dbname='task-mcm' one-time-sql='' port='5433' server='localhost' username='postgres' />
+          </named-connection>
+        </named-connections>
+        <relation type='collection'>
+          <relation connection='postgres.1j6f5zv08l6xrm1gwlawy02bpjtq' name='publicationsraw' table='[public].[publicationsraw]' type='table' />
+          <relation connection='postgres.1j6f5zv08l6xrm1gwlawy02bpjtq' name='binding' table='[public].[binding]' type='table' />
+          <relation connection='postgres.1j6f5zv08l6xrm1gwlawy02bpjtq' name='commissioningeditor' table='[public].[commissioningeditor]' type='table' />
+          <relation connection='postgres.1j6f5zv08l6xrm1gwlawy02bpjtq' name='editionpricesynchronisationtemplate' table='[public].[editionpricesynchronisationtemplate]' type='table' />
+          <relation connection='postgres.1j6f5zv08l6xrm1gwlawy02bpjtq' name='editiontarget' table='[public].[editiontarget]' type='table' />
+          <relation connection='postgres.1j6f5zv08l6xrm1gwlawy02bpjtq' name='editionvistaprodtype' table='[public].[editionvistaprodtype]' type='table' />
+          <relation connection='postgres.1j6f5zv08l6xrm1gwlawy02bpjtq' name='format' table='[public].[format]' type='table' />
+          <relation connection='postgres.1j6f5zv08l6xrm1gwlawy02bpjtq' name='imprint' table='[public].[imprint]' type='table' />
+          <relation connection='postgres.1j6f5zv08l6xrm1gwlawy02bpjtq' name='producttype' table='[public].[producttype]' type='table' />
+          <relation connection='postgres.1j6f5zv08l6xrm1gwlawy02bpjtq' name='vistapublisher' table='[public].[vistapublisher]' type='table' />
+          <relation connection='postgres.1j6f5zv08l6xrm1gwlawy02bpjtq' name='workalert' table='[public].[workalert]' type='table' />
+          <relation connection='postgres.1j6f5zv08l6xrm1gwlawy02bpjtq' name='workstatus' table='[public].[workstatus]' type='table' />
+        </relation>
+        <cols>
+          <map key='[binding (binding)]' value='[binding].[binding]' />
+          <map key='[binding]' value='[publicationsraw].[binding]' />
+          <map key='[commissioningeditor (commissioningeditor)]' value='[commissioningeditor].[commissioningeditor]' />
+          <map key='[commissioningeditor]' value='[publicationsraw].[commissioningeditor]' />
+          <map key='[confirmationnotes]' value='[publicationsraw].[confirmationnotes]' />
+          <map key='[confirmationrestrictionadded]' value='[publicationsraw].[confirmationrestrictionadded]' />
+          <map key='[editionembargoeduntil]' value='[publicationsraw].[editionembargoeduntil]' />
+          <map key='[editionextent]' value='[publicationsraw].[editionextent]' />
+          <map key='[editionpricesynchronisationtemplate (editionpricesynchronisationtemplate)]' value='[editionpricesynchronisationtemplate].[editionpricesynchronisationtemplate]' />
+          <map key='[editionpricesynchronisationtemplate]' value='[publicationsraw].[editionpricesynchronisationtemplate]' />
+          <map key='[editiontarget (editiontarget)]' value='[editiontarget].[editiontarget]' />
+          <map key='[editiontarget]' value='[publicationsraw].[editiontarget]' />
+          <map key='[editionvistaprodtype (editionvistaprodtype)]' value='[editionvistaprodtype].[editionvistaprodtype]' />
+          <map key='[editionvistaprodtype]' value='[publicationsraw].[editionvistaprodtype]' />
+          <map key='[excludedfromconfirmation]' value='[publicationsraw].[excludedfromconfirmation]' />
+          <map key='[format (format)]' value='[format].[format]' />
+          <map key='[format]' value='[publicationsraw].[format]' />
+          <map key='[imprint (imprint)]' value='[imprint].[imprint]' />
+          <map key='[imprint]' value='[publicationsraw].[imprint]' />
+          <map key='[isbn]' value='[publicationsraw].[isbn]' />
+          <map key='[producttype (producttype)]' value='[producttype].[producttype]' />
+          <map key='[producttype]' value='[publicationsraw].[producttype]' />
+          <map key='[publicationdate]' value='[publicationsraw].[publicationdate]' />
+          <map key='[vistapublisher (vistapublisher)]' value='[vistapublisher].[vistapublisher]' />
+          <map key='[vistapublisher]' value='[publicationsraw].[vistapublisher]' />
+          <map key='[workalert (workalert)]' value='[workalert].[workalert]' />
+          <map key='[workalert]' value='[publicationsraw].[workalert]' />
+          <map key='[workref]' value='[publicationsraw].[workref]' />
+          <map key='[workstatus (workstatus)]' value='[workstatus].[workstatus]' />
+          <map key='[workstatus]' value='[publicationsraw].[workstatus]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>workref</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[workref]</local-name>
+            <parent-name>[publicationsraw]</parent-name>
+            <remote-alias>workref</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[publicationsraw_A2C6CDC9937346C3A92DC1D99BE55697]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>vistapublisher</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[vistapublisher]</local-name>
+            <parent-name>[publicationsraw]</parent-name>
+            <remote-alias>vistapublisher</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[publicationsraw_A2C6CDC9937346C3A92DC1D99BE55697]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>publicationdate</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[publicationdate]</local-name>
+            <parent-name>[publicationsraw]</parent-name>
+            <remote-alias>publicationdate</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[publicationsraw_A2C6CDC9937346C3A92DC1D99BE55697]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>workalert</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[workalert]</local-name>
+            <parent-name>[publicationsraw]</parent-name>
+            <remote-alias>workalert</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[publicationsraw_A2C6CDC9937346C3A92DC1D99BE55697]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>excludedfromconfirmation</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[excludedfromconfirmation]</local-name>
+            <parent-name>[publicationsraw]</parent-name>
+            <remote-alias>excludedfromconfirmation</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[publicationsraw_A2C6CDC9937346C3A92DC1D99BE55697]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>confirmationrestrictionadded</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[confirmationrestrictionadded]</local-name>
+            <parent-name>[publicationsraw]</parent-name>
+            <remote-alias>confirmationrestrictionadded</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[publicationsraw_A2C6CDC9937346C3A92DC1D99BE55697]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>confirmationnotes</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[confirmationnotes]</local-name>
+            <parent-name>[publicationsraw]</parent-name>
+            <remote-alias>confirmationnotes</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[publicationsraw_A2C6CDC9937346C3A92DC1D99BE55697]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>workstatus</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[workstatus]</local-name>
+            <parent-name>[publicationsraw]</parent-name>
+            <remote-alias>workstatus</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[publicationsraw_A2C6CDC9937346C3A92DC1D99BE55697]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>imprint</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[imprint]</local-name>
+            <parent-name>[publicationsraw]</parent-name>
+            <remote-alias>imprint</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[publicationsraw_A2C6CDC9937346C3A92DC1D99BE55697]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>commissioningeditor</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[commissioningeditor]</local-name>
+            <parent-name>[publicationsraw]</parent-name>
+            <remote-alias>commissioningeditor</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[publicationsraw_A2C6CDC9937346C3A92DC1D99BE55697]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>isbn</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[isbn]</local-name>
+            <parent-name>[publicationsraw]</parent-name>
+            <remote-alias>isbn</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[publicationsraw_A2C6CDC9937346C3A92DC1D99BE55697]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>producttype</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[producttype]</local-name>
+            <parent-name>[publicationsraw]</parent-name>
+            <remote-alias>producttype</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[publicationsraw_A2C6CDC9937346C3A92DC1D99BE55697]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>editiontarget</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[editiontarget]</local-name>
+            <parent-name>[publicationsraw]</parent-name>
+            <remote-alias>editiontarget</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[publicationsraw_A2C6CDC9937346C3A92DC1D99BE55697]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>binding</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[binding]</local-name>
+            <parent-name>[publicationsraw]</parent-name>
+            <remote-alias>binding</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[publicationsraw_A2C6CDC9937346C3A92DC1D99BE55697]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>format</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[format]</local-name>
+            <parent-name>[publicationsraw]</parent-name>
+            <remote-alias>format</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[publicationsraw_A2C6CDC9937346C3A92DC1D99BE55697]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>editionvistaprodtype</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[editionvistaprodtype]</local-name>
+            <parent-name>[publicationsraw]</parent-name>
+            <remote-alias>editionvistaprodtype</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[publicationsraw_A2C6CDC9937346C3A92DC1D99BE55697]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>editionpricesynchronisationtemplate</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[editionpricesynchronisationtemplate]</local-name>
+            <parent-name>[publicationsraw]</parent-name>
+            <remote-alias>editionpricesynchronisationtemplate</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[publicationsraw_A2C6CDC9937346C3A92DC1D99BE55697]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>editionextent</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[editionextent]</local-name>
+            <parent-name>[publicationsraw]</parent-name>
+            <remote-alias>editionextent</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[publicationsraw_A2C6CDC9937346C3A92DC1D99BE55697]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>editionembargoeduntil</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[editionembargoeduntil]</local-name>
+            <parent-name>[publicationsraw]</parent-name>
+            <remote-alias>editionembargoeduntil</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[publicationsraw_A2C6CDC9937346C3A92DC1D99BE55697]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>binding</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[binding (binding)]</local-name>
+            <parent-name>[binding]</parent-name>
+            <remote-alias>binding</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[binding_CB41AD8B304445ABA81D40ECAC5CEBBC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>commissioningeditor</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[commissioningeditor (commissioningeditor)]</local-name>
+            <parent-name>[commissioningeditor]</parent-name>
+            <remote-alias>commissioningeditor</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[commissioningeditor_EE143C74D6764DB1AA10EFC71B4884DA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>editionpricesynchronisationtemplate</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[editionpricesynchronisationtemplate (editionpricesynchronisationtemplate)]</local-name>
+            <parent-name>[editionpricesynchronisationtemplate]</parent-name>
+            <remote-alias>editionpricesynchronisationtemplate</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[editionpricesynchronisationtemplate_3DF6F5A8E98E43C3B716361F9034414D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>editiontarget</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[editiontarget (editiontarget)]</local-name>
+            <parent-name>[editiontarget]</parent-name>
+            <remote-alias>editiontarget</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[editiontarget_88CC2BBB89B4478680C5B50B10D14C7E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>editionvistaprodtype</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[editionvistaprodtype (editionvistaprodtype)]</local-name>
+            <parent-name>[editionvistaprodtype]</parent-name>
+            <remote-alias>editionvistaprodtype</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[editionvistaprodtype_8C43EBA2BD1A440892E6925BC570224E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>format</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[format (format)]</local-name>
+            <parent-name>[format]</parent-name>
+            <remote-alias>format</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[format_DB431EBDD43C4B6FBF70B6AD29339EDA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>imprint</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[imprint (imprint)]</local-name>
+            <parent-name>[imprint]</parent-name>
+            <remote-alias>imprint</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[imprint_65DF629CC8C1439CB2F69609F8CCD3E5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>producttype</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[producttype (producttype)]</local-name>
+            <parent-name>[producttype]</parent-name>
+            <remote-alias>producttype</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[producttype_83F3EADEE3C843CEB333E7C0973FA743]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>vistapublisher</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[vistapublisher (vistapublisher)]</local-name>
+            <parent-name>[vistapublisher]</parent-name>
+            <remote-alias>vistapublisher</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[vistapublisher_ED3836490E0340E293C76162651DA784]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>workalert</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[workalert (workalert)]</local-name>
+            <parent-name>[workalert]</parent-name>
+            <remote-alias>workalert</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[workalert_50B026D5E83F46C6A74F10ADD3FF36A5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>workstatus</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[workstatus (workstatus)]</local-name>
+            <parent-name>[workstatus]</parent-name>
+            <remote-alias>workstatus</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[workstatus_180CEFE7D4204F9BA54BD04D0672D3CF]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='binding' datatype='table' name='[__tableau_internal_object_id__].[binding_CB41AD8B304445ABA81D40ECAC5CEBBC]' role='measure' type='quantitative' />
+      <column caption='commissioningeditor' datatype='table' name='[__tableau_internal_object_id__].[commissioningeditor_EE143C74D6764DB1AA10EFC71B4884DA]' role='measure' type='quantitative' />
+      <column caption='editionpricesynchronisationtemplate' datatype='table' name='[__tableau_internal_object_id__].[editionpricesynchronisationtemplate_3DF6F5A8E98E43C3B716361F9034414D]' role='measure' type='quantitative' />
+      <column caption='editiontarget' datatype='table' name='[__tableau_internal_object_id__].[editiontarget_88CC2BBB89B4478680C5B50B10D14C7E]' role='measure' type='quantitative' />
+      <column caption='editionvistaprodtype' datatype='table' name='[__tableau_internal_object_id__].[editionvistaprodtype_8C43EBA2BD1A440892E6925BC570224E]' role='measure' type='quantitative' />
+      <column caption='format' datatype='table' name='[__tableau_internal_object_id__].[format_DB431EBDD43C4B6FBF70B6AD29339EDA]' role='measure' type='quantitative' />
+      <column caption='imprint' datatype='table' name='[__tableau_internal_object_id__].[imprint_65DF629CC8C1439CB2F69609F8CCD3E5]' role='measure' type='quantitative' />
+      <column caption='producttype' datatype='table' name='[__tableau_internal_object_id__].[producttype_83F3EADEE3C843CEB333E7C0973FA743]' role='measure' type='quantitative' />
+      <column caption='publicationsraw' datatype='table' name='[__tableau_internal_object_id__].[publicationsraw_A2C6CDC9937346C3A92DC1D99BE55697]' role='measure' type='quantitative' />
+      <column caption='vistapublisher' datatype='table' name='[__tableau_internal_object_id__].[vistapublisher_ED3836490E0340E293C76162651DA784]' role='measure' type='quantitative' />
+      <column caption='workalert' datatype='table' name='[__tableau_internal_object_id__].[workalert_50B026D5E83F46C6A74F10ADD3FF36A5]' role='measure' type='quantitative' />
+      <column caption='workstatus' datatype='table' name='[__tableau_internal_object_id__].[workstatus_180CEFE7D4204F9BA54BD04D0672D3CF]' role='measure' type='quantitative' />
+      <column caption='Binding (Binding)' datatype='string' name='[binding (binding)]' role='dimension' type='nominal' />
+      <column caption='Binding' datatype='string' name='[binding]' role='dimension' type='nominal' />
+      <column caption='Commissioningeditor (Commissioningeditor)' datatype='string' name='[commissioningeditor (commissioningeditor)]' role='dimension' type='nominal' />
+      <column caption='Commissioningeditor' datatype='string' name='[commissioningeditor]' role='dimension' type='nominal' />
+      <column caption='Confirmationnotes' datatype='string' name='[confirmationnotes]' role='dimension' type='nominal' />
+      <column caption='Confirmationrestrictionadded' datatype='string' name='[confirmationrestrictionadded]' role='dimension' type='nominal' />
+      <column caption='Editionembargoeduntil' datatype='string' name='[editionembargoeduntil]' role='dimension' type='nominal' />
+      <column caption='Editionextent' datatype='string' name='[editionextent]' role='dimension' type='nominal' />
+      <column caption='Editionpricesynchronisationtemplate (Editionpricesynchronisationtemplate)' datatype='string' name='[editionpricesynchronisationtemplate (editionpricesynchronisationtemplate)]' role='dimension' type='nominal' />
+      <column caption='Editionpricesynchronisationtemplate' datatype='string' name='[editionpricesynchronisationtemplate]' role='dimension' type='nominal' />
+      <column caption='Editiontarget (Editiontarget)' datatype='string' name='[editiontarget (editiontarget)]' role='dimension' type='nominal' />
+      <column caption='Editiontarget' datatype='string' name='[editiontarget]' role='dimension' type='nominal' />
+      <column caption='Editionvistaprodtype (Editionvistaprodtype)' datatype='string' name='[editionvistaprodtype (editionvistaprodtype)]' role='dimension' type='nominal' />
+      <column caption='Editionvistaprodtype' datatype='string' name='[editionvistaprodtype]' role='dimension' type='nominal' />
+      <column caption='Excludedfromconfirmation' datatype='string' name='[excludedfromconfirmation]' role='dimension' type='nominal' />
+      <column caption='Format (Format)' datatype='string' name='[format (format)]' role='dimension' type='nominal' />
+      <column caption='Format' datatype='string' name='[format]' role='dimension' type='nominal' />
+      <column caption='Imprint (Imprint)' datatype='string' name='[imprint (imprint)]' role='dimension' type='nominal' />
+      <column caption='Imprint' datatype='string' name='[imprint]' role='dimension' type='nominal' />
+      <column caption='Isbn' datatype='string' name='[isbn]' role='dimension' type='nominal' />
+      <column caption='Producttype (Producttype)' datatype='string' name='[producttype (producttype)]' role='dimension' type='nominal' />
+      <column caption='Producttype' datatype='string' name='[producttype]' role='dimension' type='nominal' />
+      <column caption='Publicationdate' datatype='string' name='[publicationdate]' role='dimension' type='nominal' />
+      <column caption='Vistapublisher (Vistapublisher)' datatype='string' name='[vistapublisher (vistapublisher)]' role='dimension' type='nominal' />
+      <column caption='Vistapublisher' datatype='string' name='[vistapublisher]' role='dimension' type='nominal' />
+      <column caption='Workalert (Workalert)' datatype='string' name='[workalert (workalert)]' role='dimension' type='nominal' />
+      <column caption='Workalert' datatype='string' name='[workalert]' role='dimension' type='nominal' />
+      <column caption='Workref' datatype='string' name='[workref]' role='dimension' type='nominal' />
+      <column caption='Workstatus (Workstatus)' datatype='string' name='[workstatus (workstatus)]' role='dimension' type='nominal' />
+      <column caption='Workstatus' datatype='string' name='[workstatus]' role='dimension' type='nominal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United Kingdom&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='binding' id='binding_CB41AD8B304445ABA81D40ECAC5CEBBC'>
+            <properties context=''>
+              <relation connection='postgres.1j6f5zv08l6xrm1gwlawy02bpjtq' name='binding' table='[public].[binding]' type='table' />
+            </properties>
+          </object>
+          <object caption='commissioningeditor' id='commissioningeditor_EE143C74D6764DB1AA10EFC71B4884DA'>
+            <properties context=''>
+              <relation connection='postgres.1j6f5zv08l6xrm1gwlawy02bpjtq' name='commissioningeditor' table='[public].[commissioningeditor]' type='table' />
+            </properties>
+          </object>
+          <object caption='editionpricesynchronisationtemplate' id='editionpricesynchronisationtemplate_3DF6F5A8E98E43C3B716361F9034414D'>
+            <properties context=''>
+              <relation connection='postgres.1j6f5zv08l6xrm1gwlawy02bpjtq' name='editionpricesynchronisationtemplate' table='[public].[editionpricesynchronisationtemplate]' type='table' />
+            </properties>
+          </object>
+          <object caption='editiontarget' id='editiontarget_88CC2BBB89B4478680C5B50B10D14C7E'>
+            <properties context=''>
+              <relation connection='postgres.1j6f5zv08l6xrm1gwlawy02bpjtq' name='editiontarget' table='[public].[editiontarget]' type='table' />
+            </properties>
+          </object>
+          <object caption='editionvistaprodtype' id='editionvistaprodtype_8C43EBA2BD1A440892E6925BC570224E'>
+            <properties context=''>
+              <relation connection='postgres.1j6f5zv08l6xrm1gwlawy02bpjtq' name='editionvistaprodtype' table='[public].[editionvistaprodtype]' type='table' />
+            </properties>
+          </object>
+          <object caption='format' id='format_DB431EBDD43C4B6FBF70B6AD29339EDA'>
+            <properties context=''>
+              <relation connection='postgres.1j6f5zv08l6xrm1gwlawy02bpjtq' name='format' table='[public].[format]' type='table' />
+            </properties>
+          </object>
+          <object caption='imprint' id='imprint_65DF629CC8C1439CB2F69609F8CCD3E5'>
+            <properties context=''>
+              <relation connection='postgres.1j6f5zv08l6xrm1gwlawy02bpjtq' name='imprint' table='[public].[imprint]' type='table' />
+            </properties>
+          </object>
+          <object caption='producttype' id='producttype_83F3EADEE3C843CEB333E7C0973FA743'>
+            <properties context=''>
+              <relation connection='postgres.1j6f5zv08l6xrm1gwlawy02bpjtq' name='producttype' table='[public].[producttype]' type='table' />
+            </properties>
+          </object>
+          <object caption='publicationsraw' id='publicationsraw_A2C6CDC9937346C3A92DC1D99BE55697'>
+            <properties context=''>
+              <relation connection='postgres.1j6f5zv08l6xrm1gwlawy02bpjtq' name='publicationsraw' table='[public].[publicationsraw]' type='table' />
+            </properties>
+          </object>
+          <object caption='vistapublisher' id='vistapublisher_ED3836490E0340E293C76162651DA784'>
+            <properties context=''>
+              <relation connection='postgres.1j6f5zv08l6xrm1gwlawy02bpjtq' name='vistapublisher' table='[public].[vistapublisher]' type='table' />
+            </properties>
+          </object>
+          <object caption='workalert' id='workalert_50B026D5E83F46C6A74F10ADD3FF36A5'>
+            <properties context=''>
+              <relation connection='postgres.1j6f5zv08l6xrm1gwlawy02bpjtq' name='workalert' table='[public].[workalert]' type='table' />
+            </properties>
+          </object>
+          <object caption='workstatus' id='workstatus_180CEFE7D4204F9BA54BD04D0672D3CF'>
+            <properties context=''>
+              <relation connection='postgres.1j6f5zv08l6xrm1gwlawy02bpjtq' name='workstatus' table='[public].[workstatus]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[binding]' />
+              <expression op='[binding (binding)]' />
+            </expression>
+            <first-end-point object-id='publicationsraw_A2C6CDC9937346C3A92DC1D99BE55697' />
+            <second-end-point object-id='binding_CB41AD8B304445ABA81D40ECAC5CEBBC' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[commissioningeditor]' />
+              <expression op='[commissioningeditor (commissioningeditor)]' />
+            </expression>
+            <first-end-point object-id='publicationsraw_A2C6CDC9937346C3A92DC1D99BE55697' />
+            <second-end-point object-id='commissioningeditor_EE143C74D6764DB1AA10EFC71B4884DA' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[editionpricesynchronisationtemplate]' />
+              <expression op='[editionpricesynchronisationtemplate (editionpricesynchronisationtemplate)]' />
+            </expression>
+            <first-end-point object-id='publicationsraw_A2C6CDC9937346C3A92DC1D99BE55697' />
+            <second-end-point object-id='editionpricesynchronisationtemplate_3DF6F5A8E98E43C3B716361F9034414D' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[editiontarget]' />
+              <expression op='[editiontarget (editiontarget)]' />
+            </expression>
+            <first-end-point object-id='publicationsraw_A2C6CDC9937346C3A92DC1D99BE55697' />
+            <second-end-point object-id='editiontarget_88CC2BBB89B4478680C5B50B10D14C7E' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[editionvistaprodtype]' />
+              <expression op='[editionvistaprodtype (editionvistaprodtype)]' />
+            </expression>
+            <first-end-point object-id='publicationsraw_A2C6CDC9937346C3A92DC1D99BE55697' />
+            <second-end-point object-id='editionvistaprodtype_8C43EBA2BD1A440892E6925BC570224E' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[format]' />
+              <expression op='[format (format)]' />
+            </expression>
+            <first-end-point object-id='publicationsraw_A2C6CDC9937346C3A92DC1D99BE55697' />
+            <second-end-point object-id='format_DB431EBDD43C4B6FBF70B6AD29339EDA' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[imprint]' />
+              <expression op='[imprint (imprint)]' />
+            </expression>
+            <first-end-point object-id='publicationsraw_A2C6CDC9937346C3A92DC1D99BE55697' />
+            <second-end-point object-id='imprint_65DF629CC8C1439CB2F69609F8CCD3E5' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[producttype]' />
+              <expression op='[producttype (producttype)]' />
+            </expression>
+            <first-end-point object-id='publicationsraw_A2C6CDC9937346C3A92DC1D99BE55697' />
+            <second-end-point object-id='producttype_83F3EADEE3C843CEB333E7C0973FA743' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[vistapublisher]' />
+              <expression op='[vistapublisher (vistapublisher)]' />
+            </expression>
+            <first-end-point object-id='publicationsraw_A2C6CDC9937346C3A92DC1D99BE55697' />
+            <second-end-point object-id='vistapublisher_ED3836490E0340E293C76162651DA784' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[workalert]' />
+              <expression op='[workalert (workalert)]' />
+            </expression>
+            <first-end-point object-id='publicationsraw_A2C6CDC9937346C3A92DC1D99BE55697' />
+            <second-end-point object-id='workalert_50B026D5E83F46C6A74F10ADD3FF36A5' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[workstatus]' />
+              <expression op='[workstatus (workstatus)]' />
+            </expression>
+            <first-end-point object-id='publicationsraw_A2C6CDC9937346C3A92DC1D99BE55697' />
+            <second-end-point object-id='workstatus_180CEFE7D4204F9BA54BD04D0672D3CF' />
+          </relationship>
+        </relationships>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Binding Cleanup'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='publicationsraw+ (task-mcm)' name='federated.1kxk1yn1g1tzbs1a8jail0cd2l9m' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1kxk1yn1g1tzbs1a8jail0cd2l9m'>
+            <column caption='Binding' datatype='string' name='[binding]' role='dimension' type='nominal' />
+            <column-instance column='[binding]' derivation='Count' name='[cnt:binding:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[binding]' derivation='None' name='[none:binding:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1kxk1yn1g1tzbs1a8jail0cd2l9m].[none:binding:nk]</rows>
+        <cols>[federated.1kxk1yn1g1tzbs1a8jail0cd2l9m].[cnt:binding:qk]</cols>
+      </table>
+      <simple-id uuid='{72B226C2-4D15-4E6B-B243-0FFD5E9E0F6B}' />
+    </worksheet>
+    <worksheet name='Embargo Date'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='publicationsraw+ (task-mcm)' name='federated.1kxk1yn1g1tzbs1a8jail0cd2l9m' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1kxk1yn1g1tzbs1a8jail0cd2l9m'>
+            <column-instance column='[__tableau_internal_object_id__].[editiontarget_88CC2BBB89B4478680C5B50B10D14C7E]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:editiontarget_88CC2BBB89B4478680C5B50B10D14C7E:qk]' pivot='key' type='quantitative' />
+            <column caption='editiontarget' datatype='table' name='[__tableau_internal_object_id__].[editiontarget_88CC2BBB89B4478680C5B50B10D14C7E]' role='measure' type='quantitative' />
+            <column caption='Editionembargoeduntil' datatype='string' name='[editionembargoeduntil]' role='dimension' type='nominal' />
+            <column-instance column='[editionembargoeduntil]' derivation='None' name='[none:editionembargoeduntil:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1kxk1yn1g1tzbs1a8jail0cd2l9m].[none:editionembargoeduntil:nk]</rows>
+        <cols>[federated.1kxk1yn1g1tzbs1a8jail0cd2l9m].[__tableau_internal_object_id__].[cnt:editiontarget_88CC2BBB89B4478680C5B50B10D14C7E:qk]</cols>
+      </table>
+      <simple-id uuid='{900439BB-291F-438F-8B95-681E2AE694D5}' />
+    </worksheet>
+    <worksheet name='Extent'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='publicationsraw+ (task-mcm)' name='federated.1kxk1yn1g1tzbs1a8jail0cd2l9m' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1kxk1yn1g1tzbs1a8jail0cd2l9m'>
+            <column-instance column='[editionextent]' derivation='Count' name='[cnt:editionextent:qk]' pivot='key' type='quantitative' />
+            <column caption='Editionextent' datatype='string' name='[editionextent]' role='dimension' type='nominal' />
+            <column-instance column='[editionextent]' derivation='None' name='[none:editionextent:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1kxk1yn1g1tzbs1a8jail0cd2l9m].[none:editionextent:nk]</rows>
+        <cols>[federated.1kxk1yn1g1tzbs1a8jail0cd2l9m].[cnt:editionextent:qk]</cols>
+      </table>
+      <simple-id uuid='{FB1BA3DF-EFA9-4428-BAB3-73D9DD5846B9}' />
+    </worksheet>
+    <worksheet name='Format'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='publicationsraw+ (task-mcm)' name='federated.1kxk1yn1g1tzbs1a8jail0cd2l9m' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1kxk1yn1g1tzbs1a8jail0cd2l9m'>
+            <column-instance column='[format]' derivation='Count' name='[cnt:format:qk]' pivot='key' type='quantitative' />
+            <column caption='Format' datatype='string' name='[format]' role='dimension' type='nominal' />
+            <column-instance column='[format]' derivation='None' name='[none:format:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1kxk1yn1g1tzbs1a8jail0cd2l9m].[none:format:nk]</rows>
+        <cols>[federated.1kxk1yn1g1tzbs1a8jail0cd2l9m].[cnt:format:qk]</cols>
+      </table>
+      <simple-id uuid='{6E4D3ACA-B35F-412F-9929-3C6EC6FF9C34}' />
+    </worksheet>
+    <worksheet name='Product Synch Template'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='publicationsraw+ (task-mcm)' name='federated.1kxk1yn1g1tzbs1a8jail0cd2l9m' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1kxk1yn1g1tzbs1a8jail0cd2l9m'>
+            <column-instance column='[editionpricesynchronisationtemplate]' derivation='Count' name='[cnt:editionpricesynchronisationtemplate:qk]' pivot='key' type='quantitative' />
+            <column caption='Editionpricesynchronisationtemplate' datatype='string' name='[editionpricesynchronisationtemplate]' role='dimension' type='nominal' />
+            <column-instance column='[editionpricesynchronisationtemplate]' derivation='None' name='[none:editionpricesynchronisationtemplate:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1kxk1yn1g1tzbs1a8jail0cd2l9m].[none:editionpricesynchronisationtemplate:nk]</rows>
+        <cols>[federated.1kxk1yn1g1tzbs1a8jail0cd2l9m].[cnt:editionpricesynchronisationtemplate:qk]</cols>
+      </table>
+      <simple-id uuid='{183FB39D-F9E3-458E-919A-977DA913E25A}' />
+    </worksheet>
+    <worksheet name='Publication Date'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='publicationsraw+ (task-mcm)' name='federated.1kxk1yn1g1tzbs1a8jail0cd2l9m' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1kxk1yn1g1tzbs1a8jail0cd2l9m'>
+            <column-instance column='[publicationdate]' derivation='Count' name='[cnt:publicationdate:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[publicationdate]' derivation='None' name='[none:publicationdate:nk]' pivot='key' type='nominal' />
+            <column caption='Publicationdate' datatype='string' name='[publicationdate]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1kxk1yn1g1tzbs1a8jail0cd2l9m].[none:publicationdate:nk]</rows>
+        <cols>[federated.1kxk1yn1g1tzbs1a8jail0cd2l9m].[cnt:publicationdate:qk]</cols>
+      </table>
+      <simple-id uuid='{E00C5AD1-DEB1-4CF0-A761-70FDD0523493}' />
+    </worksheet>
+    <worksheet name='Raw Data'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='publicationsraw+ (task-mcm)' name='federated.1kxk1yn1g1tzbs1a8jail0cd2l9m' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1kxk1yn1g1tzbs1a8jail0cd2l9m'>
+            <column caption='Binding' datatype='string' name='[binding]' role='dimension' type='nominal' />
+            <column caption='Commissioningeditor' datatype='string' name='[commissioningeditor]' role='dimension' type='nominal' />
+            <column caption='Confirmationnotes' datatype='string' name='[confirmationnotes]' role='dimension' type='nominal' />
+            <column caption='Confirmationrestrictionadded' datatype='string' name='[confirmationrestrictionadded]' role='dimension' type='nominal' />
+            <column caption='Editionembargoeduntil' datatype='string' name='[editionembargoeduntil]' role='dimension' type='nominal' />
+            <column caption='Editionextent' datatype='string' name='[editionextent]' role='dimension' type='nominal' />
+            <column caption='Editionpricesynchronisationtemplate' datatype='string' name='[editionpricesynchronisationtemplate]' role='dimension' type='nominal' />
+            <column caption='Editiontarget (Editiontarget)' datatype='string' name='[editiontarget (editiontarget)]' role='dimension' type='nominal' />
+            <column caption='Editiontarget' datatype='string' name='[editiontarget]' role='dimension' type='nominal' />
+            <column caption='Editionvistaprodtype' datatype='string' name='[editionvistaprodtype]' role='dimension' type='nominal' />
+            <column caption='Excludedfromconfirmation' datatype='string' name='[excludedfromconfirmation]' role='dimension' type='nominal' />
+            <column caption='Format' datatype='string' name='[format]' role='dimension' type='nominal' />
+            <column caption='Imprint' datatype='string' name='[imprint]' role='dimension' type='nominal' />
+            <column caption='Isbn' datatype='string' name='[isbn]' role='dimension' type='nominal' />
+            <column-instance column='[binding]' derivation='None' name='[none:binding:nk]' pivot='key' type='nominal' />
+            <column-instance column='[commissioningeditor]' derivation='None' name='[none:commissioningeditor:nk]' pivot='key' type='nominal' />
+            <column-instance column='[confirmationnotes]' derivation='None' name='[none:confirmationnotes:nk]' pivot='key' type='nominal' />
+            <column-instance column='[confirmationrestrictionadded]' derivation='None' name='[none:confirmationrestrictionadded:nk]' pivot='key' type='nominal' />
+            <column-instance column='[editionembargoeduntil]' derivation='None' name='[none:editionembargoeduntil:nk]' pivot='key' type='nominal' />
+            <column-instance column='[editionextent]' derivation='None' name='[none:editionextent:nk]' pivot='key' type='nominal' />
+            <column-instance column='[editionpricesynchronisationtemplate]' derivation='None' name='[none:editionpricesynchronisationtemplate:nk]' pivot='key' type='nominal' />
+            <column-instance column='[editiontarget (editiontarget)]' derivation='None' name='[none:editiontarget (editiontarget):nk]' pivot='key' type='nominal' />
+            <column-instance column='[editiontarget]' derivation='None' name='[none:editiontarget:nk]' pivot='key' type='nominal' />
+            <column-instance column='[editionvistaprodtype]' derivation='None' name='[none:editionvistaprodtype:nk]' pivot='key' type='nominal' />
+            <column-instance column='[excludedfromconfirmation]' derivation='None' name='[none:excludedfromconfirmation:nk]' pivot='key' type='nominal' />
+            <column-instance column='[format]' derivation='None' name='[none:format:nk]' pivot='key' type='nominal' />
+            <column-instance column='[imprint]' derivation='None' name='[none:imprint:nk]' pivot='key' type='nominal' />
+            <column-instance column='[isbn]' derivation='None' name='[none:isbn:nk]' pivot='key' type='nominal' />
+            <column-instance column='[producttype]' derivation='None' name='[none:producttype:nk]' pivot='key' type='nominal' />
+            <column-instance column='[publicationdate]' derivation='None' name='[none:publicationdate:nk]' pivot='key' type='nominal' />
+            <column-instance column='[vistapublisher]' derivation='None' name='[none:vistapublisher:nk]' pivot='key' type='nominal' />
+            <column-instance column='[workalert]' derivation='None' name='[none:workalert:nk]' pivot='key' type='nominal' />
+            <column-instance column='[workref]' derivation='None' name='[none:workref:nk]' pivot='key' type='nominal' />
+            <column-instance column='[workstatus]' derivation='None' name='[none:workstatus:nk]' pivot='key' type='nominal' />
+            <column caption='Producttype' datatype='string' name='[producttype]' role='dimension' type='nominal' />
+            <column caption='Publicationdate' datatype='string' name='[publicationdate]' role='dimension' type='nominal' />
+            <column caption='Vistapublisher' datatype='string' name='[vistapublisher]' role='dimension' type='nominal' />
+            <column caption='Workalert' datatype='string' name='[workalert]' role='dimension' type='nominal' />
+            <column caption='Workref' datatype='string' name='[workref]' role='dimension' type='nominal' />
+            <column caption='Workstatus' datatype='string' name='[workstatus]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <single-value-per-nest-shelf-sorts>
+            <single-value-per-nest-shelf-sort dimension-to-sort='[federated.1kxk1yn1g1tzbs1a8jail0cd2l9m].[none:isbn:nk]' direction='ASC' measure-to-sort-by='[federated.1kxk1yn1g1tzbs1a8jail0cd2l9m].[none:workref:nk]' shelf='rows' />
+          </single-value-per-nest-shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.1kxk1yn1g1tzbs1a8jail0cd2l9m].[none:editiontarget (editiontarget):nk]' value='160' />
+            <format attr='width' field='[federated.1kxk1yn1g1tzbs1a8jail0cd2l9m].[none:workstatus:nk]' value='80' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>([federated.1kxk1yn1g1tzbs1a8jail0cd2l9m].[none:isbn:nk] / ([federated.1kxk1yn1g1tzbs1a8jail0cd2l9m].[none:workref:nk] / ([federated.1kxk1yn1g1tzbs1a8jail0cd2l9m].[none:binding:nk] / ([federated.1kxk1yn1g1tzbs1a8jail0cd2l9m].[none:editiontarget (editiontarget):nk] / ([federated.1kxk1yn1g1tzbs1a8jail0cd2l9m].[none:format:nk] / ([federated.1kxk1yn1g1tzbs1a8jail0cd2l9m].[none:editionembargoeduntil:nk] / ([federated.1kxk1yn1g1tzbs1a8jail0cd2l9m].[none:binding:nk] / ([federated.1kxk1yn1g1tzbs1a8jail0cd2l9m].[none:commissioningeditor:nk] / ([federated.1kxk1yn1g1tzbs1a8jail0cd2l9m].[none:confirmationnotes:nk] / ([federated.1kxk1yn1g1tzbs1a8jail0cd2l9m].[none:confirmationrestrictionadded:nk] / ([federated.1kxk1yn1g1tzbs1a8jail0cd2l9m].[none:editionembargoeduntil:nk] / ([federated.1kxk1yn1g1tzbs1a8jail0cd2l9m].[none:editionextent:nk] / ([federated.1kxk1yn1g1tzbs1a8jail0cd2l9m].[none:editionpricesynchronisationtemplate:nk] / ([federated.1kxk1yn1g1tzbs1a8jail0cd2l9m].[none:editiontarget:nk] / ([federated.1kxk1yn1g1tzbs1a8jail0cd2l9m].[none:editionvistaprodtype:nk] / ([federated.1kxk1yn1g1tzbs1a8jail0cd2l9m].[none:excludedfromconfirmation:nk] / ([federated.1kxk1yn1g1tzbs1a8jail0cd2l9m].[none:format:nk] / ([federated.1kxk1yn1g1tzbs1a8jail0cd2l9m].[none:imprint:nk] / ([federated.1kxk1yn1g1tzbs1a8jail0cd2l9m].[none:isbn:nk] / ([federated.1kxk1yn1g1tzbs1a8jail0cd2l9m].[none:producttype:nk] / ([federated.1kxk1yn1g1tzbs1a8jail0cd2l9m].[none:publicationdate:nk] / ([federated.1kxk1yn1g1tzbs1a8jail0cd2l9m].[none:vistapublisher:nk] / ([federated.1kxk1yn1g1tzbs1a8jail0cd2l9m].[none:workalert:nk] / ([federated.1kxk1yn1g1tzbs1a8jail0cd2l9m].[none:workref:nk] / [federated.1kxk1yn1g1tzbs1a8jail0cd2l9m].[none:workstatus:nk]))))))))))))))))))))))))</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{88525386-E3B0-4765-A93A-C831EF981880}' />
+    </worksheet>
+    <worksheet name='workstatus'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='publicationsraw+ (task-mcm)' name='federated.1kxk1yn1g1tzbs1a8jail0cd2l9m' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1kxk1yn1g1tzbs1a8jail0cd2l9m'>
+            <column-instance column='[workstatus]' derivation='Count' name='[cnt:workstatus:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[workstatus]' derivation='None' name='[none:workstatus:nk]' pivot='key' type='nominal' />
+            <column caption='Workstatus' datatype='string' name='[workstatus]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1kxk1yn1g1tzbs1a8jail0cd2l9m].[none:workstatus:nk]</rows>
+        <cols>[federated.1kxk1yn1g1tzbs1a8jail0cd2l9m].[cnt:workstatus:qk]</cols>
+      </table>
+      <simple-id uuid='{7F63BC44-1411-451F-80C5-7A650C30A012}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Raw Data'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0E195330-8BC4-447A-A7CE-E749D3229249}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Binding Cleanup'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{ABBD9B31-A4A7-47FE-9F30-FA93018798E2}' />
+    </window>
+    <window class='worksheet' name='Publication Date'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DA0C4FC5-714C-4B2E-96FF-A8E2ABE23649}' />
+    </window>
+    <window class='worksheet' name='Embargo Date'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{AA56697C-EDED-4DB3-A025-355C77CABD05}' />
+    </window>
+    <window class='worksheet' name='workstatus'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C9CE52B7-D074-4FB2-BC27-43CC8D79F090}' />
+    </window>
+    <window class='worksheet' name='Extent'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{07CB9080-3A9C-4E0E-B675-BE55083F9003}' />
+    </window>
+    <window class='worksheet' name='Format'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{42474259-0514-488F-AEB2-FAB5A04932F0}' />
+    </window>
+    <window class='worksheet' name='Product Synch Template'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{ABFD9499-AC4E-4306-B67F-F31CB854E3AB}' />
+    </window>
+  </windows>
+</workbook>
